@@ -42,17 +42,19 @@ The README uses an evidence-first scroll story with visual interruptions:
 | --- | --- | --- |
 | Midnight canvas | `#050816` | Hero and card backgrounds |
 | Raised navy | `#0B1026` | Badges and quiet surfaces |
+| Grid navy | `#172554` | Low-contrast dotted canvas texture |
 | Cyan signal | `#22D3EE` | Active data, primary highlight, Snake head |
 | Violet direction | `#7C3AED` | Main accent and activity line |
 | Soft violet | `#A78BFA` | Secondary nodes and labels |
 | Cool white | `#E2E8F0` | Primary text inside generated cards |
+| Muted slate | `#94A3B8` | Supporting text and secondary annotations |
 | Indigo border | `#312E81` | Boundaries without bright visual noise |
 
 The palette is applied consistently to the hero, contact badges, statistics, activity graph, and Snake. Decorative colors do not introduce additional meanings.
 
 ### Motion
 
-Motion is limited to the logo reveal, branch drawing, small data packets, the journey-map route, card transitions, and the contribution Snake. The hero contains no 3D objects, drop shadows, noisy particles, glow haze, or blurred transitions. Its sequence is intentionally simple: establish identity first, reveal the system relationships second, hold for reading, and fade cleanly into the next loop.
+Motion is limited to small data packets, orbit nodes, the journey-map route, and the contribution Snake. The hero contains no 3D objects, drop shadows, noisy particles, glow haze, or blurred transitions. The complete system stays visible in every frame so its first-frame preview is useful, labels never disappear while being read, and the loop has no flash or empty state.
 
 ### Typography
 
@@ -100,7 +102,7 @@ The active hero pipeline uses:
 - `assets/reyy-journey-map.svg` — the repository-owned animated introduction shown below the hero.
 - `scripts/build-system-gif.ps1` — deterministic builder that recreates the GIF from the source logo.
 
-The GIF is 1120×496 pixels with 48 frames, an 80 ms frame delay, and an infinite loop. It starts with the Reyy logo, draws six branches, reveals Source Code, Data Preprocessing, Model Evaluation, Neural Networks, Linear Regression, and Classification + Categorical cards, then holds the complete map before fading. The flat canvas uses the same Neural Midnight palette as the badges and activity cards and does not rely on a third-party image host.
+The GIF is 1120×496 pixels with 30 frames, a 120 ms frame delay, and an infinite 3.6-second loop. Every frame shows the Reyy logo and six branches for Source Code, Data Preparation, Model Evaluation, Neural Networks, Linear Regression, and Classification; only the signal packets and orbit nodes move. The flat canvas uses the same Neural Midnight palette, rounded-card geometry, borders, and accents as the journey map, badges, and activity cards and does not rely on a third-party image host.
 
 Free animation sources evaluated during research:
 

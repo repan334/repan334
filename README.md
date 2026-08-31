@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/repan334">
-    <img src="./assets/reyy-ai-system-preview-v1.gif" width="100%" alt="Animated AI and machine learning system map branching from the Reyy logo" />
+    <img src="./assets/reyy-ai-system-preview-v1.gif" width="100%" alt="Animated system map linking the Reyy logo to source code, data preparation, model evaluation, neural networks, linear regression, and classification" />
   </a>
 
   <h1>Hi, I'm Reyy — I turn ideas into useful software.</h1>
@@ -12,19 +12,11 @@
   <a href="mailto:repanptr977@gmail.com"><img src="https://img.shields.io/badge/LETS_TALK-0B1026?style=for-the-badge&amp;logo=gmail&amp;logoColor=22D3EE" alt="Email Reyy" /></a>
 </div>
 
-<br />
+---
 
 <a href="https://github.com/repan334">
   <img src="./assets/reyy-journey-map.svg" width="100%" alt="Reyy's visual journey from building software, through data and UX, toward applied AI" />
 </a>
-
-<table>
-  <tr>
-    <td width="33%" align="center"><strong>Based in</strong><br />Yogyakarta, Indonesia</td>
-    <td width="33%" align="center"><strong>I like building</strong><br />Useful, understandable products</td>
-    <td width="33%" align="center"><strong>Growing toward</strong><br />Applied AI/ML engineering</td>
-  </tr>
-</table>
 
 <details>
   <summary><strong>Open the human story behind the visual</strong></summary>
@@ -32,18 +24,18 @@
   I started by turning small ideas into working mobile, web, backend, and API projects at <strong>SMK Negeri 1 Bantul</strong>. That process taught me that good software is not only about code—it should make a task clearer for the person using it. I am now using Python projects and focused experiments to connect that product mindset with data and AI/ML foundations.
 </details>
 
-<br />
+---
 
 <a id="selected-work"></a>
 
 ## Selected work
 
-<p>Four projects, four different problems. Tap a title or its visual stack to inspect the repository.</p>
+<p>Four projects, four different problems. Open a project title or stack to inspect the repository.</p>
 
 <table>
   <tr>
     <td width="50%" valign="top" align="center">
-      <a href="https://github.com/repan334/FIKSI-SasmitaLens"><img height="58" src="https://skillicons.dev/icons?i=flutter,dart,figma&amp;theme=dark" alt="Flutter, Dart, and Figma" /></a>
+      <a href="https://github.com/repan334/FIKSI-SasmitaLens"><img height="52" src="https://skillicons.dev/icons?i=flutter,dart,figma&amp;theme=dark" alt="Flutter, Dart, and Figma" /></a>
       <h3><a href="https://github.com/repan334/FIKSI-SasmitaLens">Sasmita Lens ↗</a></h3>
       <p><strong>Fruit-quality scan experience</strong></p>
       <p>Turns an AI-oriented idea into an animated mobile flow with reusable UI, Riverpod state, device-sync concepts, and a gamified vendor view.</p>
@@ -51,7 +43,7 @@
       <img src="https://img.shields.io/badge/ROLE-COLLABORATIVE_BUILD-7C3AED?style=flat-square" alt="Role: Collaborative build" />
     </td>
     <td width="50%" valign="top" align="center">
-      <a href="https://github.com/repan334/perpustakaan"><img height="58" src="https://skillicons.dev/icons?i=php,mysql,css&amp;theme=dark" alt="PHP, MySQL, and CSS" /></a>
+      <a href="https://github.com/repan334/perpustakaan"><img height="52" src="https://skillicons.dev/icons?i=php,mysql,css&amp;theme=dark" alt="PHP, MySQL, and CSS" /></a>
       <h3><a href="https://github.com/repan334/perpustakaan">Library Management ↗</a></h3>
       <p><strong>Role-based library workflow</strong></p>
       <p>Translates administrator, staff, and borrower needs into a PHP application backed by structured MySQL data.</p>
@@ -61,7 +53,7 @@
   </tr>
   <tr>
     <td width="50%" valign="top" align="center">
-      <a href="https://github.com/repan334/Kalkulator"><img height="58" src="https://skillicons.dev/icons?i=flutter,dart&amp;theme=dark" alt="Flutter and Dart" /></a>
+      <a href="https://github.com/repan334/Kalkulator"><img height="52" src="https://skillicons.dev/icons?i=flutter,dart&amp;theme=dark" alt="Flutter and Dart" /></a>
       <h3><a href="https://github.com/repan334/Kalkulator">Calculator ↗</a></h3>
       <p><strong>Input-to-result mobile interaction</strong></p>
       <p>A focused exercise in interface composition, user input handling, and turning calculation logic into a usable app.</p>
@@ -69,7 +61,7 @@
       <img src="https://img.shields.io/badge/STAGE-FOUNDATION-7C3AED?style=flat-square" alt="Stage: Foundation" />
     </td>
     <td width="50%" valign="top" align="center">
-      <a href="https://github.com/repan334/Bookshelf-API"><img height="58" src="https://skillicons.dev/icons?i=nodejs,postman&amp;theme=dark" alt="Node.js and Postman" /></a>
+      <a href="https://github.com/repan334/Bookshelf-API"><img height="52" src="https://skillicons.dev/icons?i=nodejs,postman&amp;theme=dark" alt="Node.js and Postman" /></a>
       <h3><a href="https://github.com/repan334/Bookshelf-API">Bookshelf API ↗</a></h3>
       <p><strong>Book data behind a clean API</strong></p>
       <p>An early backend project for understanding resources, request flows, validation, and the responsibilities of a web service.</p>
@@ -86,6 +78,8 @@
   <a href="https://github.com/repan334/apk_prompt"><img src="https://img.shields.io/badge/apk__prompt-0B1026?style=for-the-badge&amp;logo=openai&amp;logoColor=A78BFA" alt="APK Prompt repository" /></a>
 </details>
 
+---
+
 ## Proof of motion
 
 <p>Projects show what I build; activity shows that the learning loop is still moving.</p>
@@ -96,6 +90,8 @@
 </div>
 
 <p align="center"><sub>Repository language distribution describes public code composition—not equal proficiency.</sub></p>
+
+---
 
 <a id="languages--tools-by-purpose"></a>
 
@@ -118,17 +114,17 @@
 <table>
   <tr>
     <td width="33%" align="center" valign="top">
-      <img height="54" src="https://skillicons.dev/icons?i=flutter,figma&amp;theme=dark" alt="Flutter and Figma" />
+      <img height="48" src="https://skillicons.dev/icons?i=flutter,figma&amp;theme=dark" alt="Flutter and Figma" />
       <h4>Mobile &amp; product UI</h4>
       <p><strong>Flutter</strong> builds one mobile interface from reusable components.<br /><strong>Figma</strong> helps plan the experience before code.</p>
     </td>
     <td width="33%" align="center" valign="top">
-      <img height="54" src="https://skillicons.dev/icons?i=laravel,nodejs,react,nextjs&amp;theme=dark" alt="Laravel, Node.js, React, and Next.js" />
+      <img height="48" src="https://skillicons.dev/icons?i=laravel,nodejs,react,nextjs&amp;theme=dark" alt="Laravel, Node.js, React, and Next.js" />
       <h4>Web &amp; backend</h4>
       <p><strong>Laravel / Node.js</strong> handle server logic and APIs.<br /><strong>React / Next.js</strong> assemble interactive web interfaces.</p>
     </td>
     <td width="33%" align="center" valign="top">
-      <img height="54" src="https://skillicons.dev/icons?i=tensorflow,pytorch,anaconda&amp;theme=dark" alt="TensorFlow, PyTorch, and Anaconda" />
+      <img height="48" src="https://skillicons.dev/icons?i=tensorflow,pytorch,anaconda&amp;theme=dark" alt="TensorFlow, PyTorch, and Anaconda" />
       <h4>Data &amp; AI learning</h4>
       <p><strong>TensorFlow / PyTorch</strong> support model experiments.<br /><strong>Anaconda</strong> keeps data environments organised.</p>
     </td>
@@ -160,6 +156,8 @@
   </table>
   <p><em>This is a direction, not a claim of equal proficiency. Technologies move into my primary stack only after a project gives them evidence.</em></p>
 </details>
+
+---
 
 ## Contribution trail
 

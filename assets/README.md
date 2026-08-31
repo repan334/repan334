@@ -4,9 +4,9 @@
 
 `reyy-logo-source.png` is the source profile logo. `reyy-ai-system-preview-v1.gif` is the approved 2D animated cover currently referenced by the root README.
 
-The animation follows a fixed sequence: the logo appears, six architecture branches extend outward, the system cards become readable, data packets travel along the connections, and the composition fades before looping. The six cards represent Source Code, Data Preprocessing, Model Evaluation, Neural Networks, Linear Regression, and Classification + Categorical.
+The complete system remains readable in every frame while data packets travel along the six branches and three nodes orbit the Reyy logo. Keeping the first frame complete prevents an empty or broken-looking preview while GitHub loads the animation. The six cards represent Source Code, Data Preparation, Model Evaluation, Neural Networks, Linear Regression, and Classification.
 
-The asset is generated locally at 1120×496 pixels with 48 frames and an infinite loop. Its design stays within the Neural Midnight palette and intentionally excludes 3D perspective, shadows, blur, glow haze, and visual clutter.
+The asset is generated locally at 1120×496 pixels with 30 frames, a 120 ms frame delay, and an infinite 3.6-second loop. Its design stays within the Neural Midnight palette and intentionally excludes 3D perspective, shadows, blur, glow haze, and visual clutter.
 
 To rebuild it after changing the logo, labels, timing, or layout:
 
@@ -16,9 +16,9 @@ powershell -ExecutionPolicy Bypass -File scripts/build-system-gif.ps1
 
 ## Interactive journey map
 
-`reyy-journey-map.svg` is the compact visual introduction shown immediately after the hero. It replaces the previous biography-first opening with three scannable stages: building useful software, connecting data with UX, and growing toward applied AI.
+`reyy-journey-map.svg` is the compact visual introduction shown immediately after the hero. It replaces the previous biography-first opening with three scannable stages: building useful software, connecting data with UX, and growing toward applied AI. Its flat cards, 14-pixel corner radius, indigo borders, side accents, and dotted canvas mirror the hero's visual grammar.
 
-The SVG is 1120×340 pixels and contains two lightweight motion cues: a moving dashed route and a travelling signal node. Its meaning is also available through SVG title/description elements and the README image alt text. It requires no JavaScript, keeping it compatible with GitHub's README renderer.
+The SVG is 1120×340 pixels and uses only a moving dashed route, kept behind the cards so animation never overlaps their content. Its meaning is also available through SVG title/description elements and the README image alt text. It requires no JavaScript, keeping it compatible with GitHub's README renderer.
 
 ## Previous hero concept
 

@@ -29,6 +29,23 @@ function With-Alpha([System.Drawing.Color]$Color, [double]$Alpha) {
     return [System.Drawing.Color]::FromArgb($a, $Color.R, $Color.G, $Color.B)
 }
 
+function New-RoundedRectanglePath(
+    [float]$X,
+    [float]$Y,
+    [float]$Width,
+    [float]$Height,
+    [float]$Radius
+) {
+    $diameter = $Radius * 2.0
+    $path = [System.Drawing.Drawing2D.GraphicsPath]::new()
+    $path.AddArc($X, $Y, $diameter, $diameter, 180, 90)
+    $path.AddArc($X + $Width - $diameter, $Y, $diameter, $diameter, 270, 90)
+    $path.AddArc($X + $Width - $diameter, $Y + $Height - $diameter, $diameter, $diameter, 0, 90)
+    $path.AddArc($X, $Y + $Height - $diameter, $diameter, $diameter, 90, 90)
+    $path.CloseFigure()
+    return $path
+}
+
 function Set-Gif-AnimationMetadata(
     [string]$Path,
     [System.UInt16]$Delay
@@ -292,20 +309,14 @@ function Draw-Card(
     $titleBrush = [System.Drawing.SolidBrush]::new($titleColor)
     $detailBrush = [System.Drawing.SolidBrush]::new($detailColor)
     $accentPen = [System.Drawing.Pen]::new((With-Alpha $accent $alpha), 3.0)
-    $compactTitleFont = $null
-    $activeTitleFont = $TitleFont
-    if ($Card.Title.Length -gt 22) {
-        $compactTitleFont = [System.Drawing.Font]::new('Segoe UI Semibold', 15, [System.Drawing.FontStyle]::Regular, [System.Drawing.GraphicsUnit]::Pixel)
-        $activeTitleFont = $compactTitleFont
-    }
+    $cardPath = New-RoundedRectanglePath $x $y 350 100 14
     try {
-        $rect = [System.Drawing.RectangleF]::new($x, $y, 350, 100)
-        $Graphics.FillRectangle($surfaceBrush, $rect)
-        $Graphics.DrawRectangle($borderPen, $x, $y, 350, 100)
-        $Graphics.DrawLine($accentPen, $x, $y, $x, $y + 100)
+        $Graphics.FillPath($surfaceBrush, $cardPath)
+        $Graphics.DrawPath($borderPen, $cardPath)
+        $Graphics.DrawLine($accentPen, $x + 1.5, $y + 14, $x + 1.5, $y + 86)
         Draw-Icon $Graphics $Card.Icon ($x + 24) ($y + 22) $alpha $accent $CodeFont
-        $Graphics.DrawString($Card.Title, $activeTitleFont, $titleBrush, $x + 99, $y + 25)
-        $Graphics.DrawString($Card.Detail, $DetailFont, $detailBrush, $x + 100, $y + 57)
+        $Graphics.DrawString($Card.Title, $TitleFont, $titleBrush, $x + 99, $y + 23)
+        $Graphics.DrawString($Card.Detail, $DetailFont, $detailBrush, $x + 100, $y + 58)
     }
     finally {
         $surfaceBrush.Dispose()
@@ -313,7 +324,7 @@ function Draw-Card(
         $titleBrush.Dispose()
         $detailBrush.Dispose()
         $accentPen.Dispose()
-        if ($null -ne $compactTitleFont) { $compactTitleFont.Dispose() }
+        $cardPath.Dispose()
     }
 }
 
@@ -321,8 +332,8 @@ $canvasWidth = 1400
 $canvasHeight = 620
 $width = 1120
 $height = 496
-$frameCount = 48
-$frameDelay = [System.UInt16]8
+$frameCount = 30
+$frameDelay = [System.UInt16]12
 
 $background = [System.Drawing.ColorTranslator]::FromHtml('#050816')
 $gridColor = [System.Drawing.ColorTranslator]::FromHtml('#172554')
@@ -331,11 +342,11 @@ $violet = [System.Drawing.ColorTranslator]::FromHtml('#7C3AED')
 
 $cards = @(
     [pscustomobject]@{ X=45; Y=45; Side='left'; Title='SOURCE CODE'; Detail='build / test / iterate'; Icon='code'; Accent='#22D3EE' },
-    [pscustomobject]@{ X=45; Y=260; Side='left'; Title='DATA PREPROCESSING'; Detail='clean / transform / prepare'; Icon='data'; Accent='#38BDF8' },
-    [pscustomobject]@{ X=45; Y=475; Side='left'; Title='MODEL EVALUATION'; Detail='metrics / validation / review'; Icon='evaluation'; Accent='#A78BFA' },
+    [pscustomobject]@{ X=45; Y=260; Side='left'; Title='DATA PREPARATION'; Detail='clean / transform / prepare'; Icon='data'; Accent='#22D3EE' },
+    [pscustomobject]@{ X=45; Y=475; Side='left'; Title='MODEL EVALUATION'; Detail='measure / validate / improve'; Icon='evaluation'; Accent='#A78BFA' },
     [pscustomobject]@{ X=1005; Y=45; Side='right'; Title='NEURAL NETWORKS'; Detail='layers / signals / learning'; Icon='neural'; Accent='#7C3AED' },
     [pscustomobject]@{ X=1005; Y=260; Side='right'; Title='LINEAR REGRESSION'; Detail='features / fit / prediction'; Icon='regression'; Accent='#22D3EE' },
-    [pscustomobject]@{ X=1005; Y=475; Side='right'; Title='CLASSIFICATION + CATEGORICAL'; Detail='classes / labels / categories'; Icon='classification'; Accent='#A78BFA' }
+    [pscustomobject]@{ X=1005; Y=475; Side='right'; Title='CLASSIFICATION'; Detail='classes / labels / categories'; Icon='classification'; Accent='#A78BFA' }
 )
 
 $paths = @(
@@ -349,24 +360,26 @@ $paths = @(
 
 $resolvedLogo = (Resolve-Path -LiteralPath $LogoPath).Path
 $logo = [System.Drawing.Bitmap]::FromFile($resolvedLogo)
-$titleFont = [System.Drawing.Font]::new('Segoe UI Semibold', 20, [System.Drawing.FontStyle]::Regular, [System.Drawing.GraphicsUnit]::Pixel)
-$detailFont = [System.Drawing.Font]::new('Segoe UI', 13, [System.Drawing.FontStyle]::Regular, [System.Drawing.GraphicsUnit]::Pixel)
+$titleFont = [System.Drawing.Font]::new('Segoe UI Semibold', 22, [System.Drawing.FontStyle]::Regular, [System.Drawing.GraphicsUnit]::Pixel)
+$detailFont = [System.Drawing.Font]::new('Segoe UI', 14, [System.Drawing.FontStyle]::Regular, [System.Drawing.GraphicsUnit]::Pixel)
 $codeFont = [System.Drawing.Font]::new('Consolas', 25, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
 $encoder = [System.Windows.Media.Imaging.GifBitmapEncoder]::new()
 
 try {
     for ($frameIndex = 0; $frameIndex -lt $frameCount; $frameIndex++) {
-        $time = $frameIndex / [double]($frameCount - 1)
-        $fadeOut = 1.0 - (Smooth-Step (($time - 0.88) / 0.12))
-        $logoProgress = (Ease-Out-Cubic (($time - 0.02) / 0.18)) * $fadeOut
+        # Keep the full system readable in every frame. Only the signal packets and
+        # orbit nodes move, so the first-frame preview never looks blank or broken.
+        $time = $frameIndex / [double]$frameCount
+        $logoProgress = 1.0
 
         $bitmap = [System.Drawing.Bitmap]::new($width, $height, [System.Drawing.Imaging.PixelFormat]::Format32bppPArgb)
         $graphics = [System.Drawing.Graphics]::FromImage($bitmap)
         try {
             $graphics.SmoothingMode = [System.Drawing.Drawing2D.SmoothingMode]::AntiAlias
+            $graphics.CompositingQuality = [System.Drawing.Drawing2D.CompositingQuality]::HighQuality
             $graphics.InterpolationMode = [System.Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
             $graphics.PixelOffsetMode = [System.Drawing.Drawing2D.PixelOffsetMode]::HighQuality
-            $graphics.TextRenderingHint = [System.Drawing.Text.TextRenderingHint]::ClearTypeGridFit
+            $graphics.TextRenderingHint = [System.Drawing.Text.TextRenderingHint]::AntiAliasGridFit
             $graphics.Clear($background)
             $graphics.ScaleTransform($width / [float]$canvasWidth, $height / [float]$canvasHeight)
 
@@ -381,27 +394,22 @@ try {
             finally { $gridBrush.Dispose() }
 
             for ($index = 0; $index -lt $cards.Count; $index++) {
-                $start = 0.16 + (($index % 3) * 0.045)
-                $branchProgress = (Ease-Out-Cubic (($time - $start) / 0.28)) * $fadeOut
                 $accent = if (($index % 2) -eq 0) { $cyan } else { $violet }
-                $branchPen = [System.Drawing.Pen]::new((With-Alpha $accent (0.82 * $fadeOut)), 2.0)
+                $branchPen = [System.Drawing.Pen]::new((With-Alpha $accent 0.82), 2.0)
                 try {
                     $branchPen.StartCap = [System.Drawing.Drawing2D.LineCap]::Round
                     $branchPen.EndCap = [System.Drawing.Drawing2D.LineCap]::Round
-                    Draw-Polyline-Progress $graphics $branchPen $paths[$index] $branchProgress
+                    Draw-Polyline-Progress $graphics $branchPen $paths[$index] 1.0
                 }
                 finally { $branchPen.Dispose() }
 
-                $cardProgress = ((Ease-Out-Cubic (($time - ($start + 0.12)) / 0.18)) * $fadeOut)
-                Draw-Card $graphics $cards[$index] $cardProgress $titleFont $detailFont $codeFont
+                Draw-Card $graphics $cards[$index] 1.0 $titleFont $detailFont $codeFont
 
-                if ($branchProgress -gt 0.98 -and $fadeOut -gt 0.05) {
-                    $travel = (($time * 2.7) + ($index * 0.13)) % 1.0
-                    $packet = Get-Point-On-Polyline $paths[$index] $travel
-                    $packetBrush = [System.Drawing.SolidBrush]::new((With-Alpha $accent (0.9 * $fadeOut)))
-                    try { $graphics.FillEllipse($packetBrush, $packet.X - 3, $packet.Y - 3, 7, 7) }
-                    finally { $packetBrush.Dispose() }
-                }
+                $travel = ($time + ($index * 0.13)) % 1.0
+                $packet = Get-Point-On-Polyline $paths[$index] $travel
+                $packetBrush = [System.Drawing.SolidBrush]::new((With-Alpha $accent 0.95))
+                try { $graphics.FillEllipse($packetBrush, $packet.X - 3, $packet.Y - 3, 7, 7) }
+                finally { $packetBrush.Dispose() }
             }
 
             if ($logoProgress -gt 0.0) {
@@ -438,7 +446,7 @@ try {
                 }
                 finally { $attributes.Dispose() }
 
-                $orbitAngle = $time * [Math]::PI * 4.0
+                $orbitAngle = $time * [Math]::PI * 2.0
                 for ($orbitIndex = 0; $orbitIndex -lt 3; $orbitIndex++) {
                     $angle = $orbitAngle + (($orbitIndex * 2.0 * [Math]::PI) / 3.0)
                     $orbitX = 700.0 + ([Math]::Cos($angle) * ($plateSize / 2.0))

@@ -1,100 +1,165 @@
 <div align="center">
   <a href="https://github.com/repan334">
-    <img src="./assets/reyy-ai-system-preview-v1.gif" width="100%" alt="Animated 2D AI and machine learning system map branching from the Reyy logo" />
+    <img src="./assets/reyy-ai-system-preview-v1.gif" width="100%" alt="Animated AI and machine learning system map branching from the Reyy logo" />
   </a>
 
-  <h1>Reyy - Junior Engineer</h1>
-  <p><strong>Passionate about AI/ML Engineering</strong></p>
-  <p>Software Engineering Student &nbsp;|&nbsp; Yogyakarta, Indonesia &nbsp;|&nbsp; he/him</p>
+  <h1>Hi, I'm Reyy — I turn ideas into useful software.</h1>
+  <p><strong>Junior Engineer building across product interfaces, backend flows, and the foundations of applied AI.</strong></p>
+  <p>Software Engineering Student &nbsp;•&nbsp; Yogyakarta, Indonesia &nbsp;•&nbsp; Open to internships and junior opportunities</p>
 
-  <a href="mailto:repanptr977@gmail.com"><img src="https://img.shields.io/badge/Email-0B1026?style=for-the-badge&amp;logo=gmail&amp;logoColor=22D3EE" alt="Email" /></a>
-  <a href="https://www.linkedin.com/in/reifan-putra-a506a0321/"><img src="https://img.shields.io/badge/LinkedIn-0B1026?style=for-the-badge&amp;logo=linkedin&amp;logoColor=22D3EE" alt="LinkedIn" /></a>
-  <a href="https://www.instagram.com/reift_.ma/"><img src="https://img.shields.io/badge/Instagram-0B1026?style=for-the-badge&amp;logo=instagram&amp;logoColor=A78BFA" alt="Instagram" /></a>
-  <a href="https://github.com/repan334"><img src="https://img.shields.io/badge/GitHub-0B1026?style=for-the-badge&amp;logo=github&amp;logoColor=E2E8F0" alt="GitHub" /></a>
+  <a href="#selected-work"><img src="https://img.shields.io/badge/EXPLORE_PROJECTS-22D3EE?style=for-the-badge&amp;logo=github&amp;logoColor=050816" alt="Explore projects" /></a>
+  <a href="#languages--tools-by-purpose"><img src="https://img.shields.io/badge/VIEW_MY_STACK-7C3AED?style=for-the-badge&amp;logo=stackshare&amp;logoColor=white" alt="View my stack" /></a>
+  <a href="mailto:repanptr977@gmail.com"><img src="https://img.shields.io/badge/LETS_TALK-0B1026?style=for-the-badge&amp;logo=gmail&amp;logoColor=22D3EE" alt="Email Reyy" /></a>
 </div>
 
----
+<br />
 
-## About Me
+<a href="https://github.com/repan334">
+  <img src="./assets/reyy-journey-map.svg" width="100%" alt="Reyy's visual journey from building software, through data and UX, toward applied AI" />
+</a>
 
-I started my journey by turning small ideas into working software. As a Software Engineering student at **SMK Negeri 1 Bantul**, I have explored web, mobile, backend, and API development through hands-on projects.
-
-I am now focusing on Python and the foundations of AI/ML, learning through small experiments, careful documentation, and consistent practice as I work toward becoming a dependable developer.
-
-## What I'm Working On
-
-- **Built and practiced:** developing projects across Flutter, PHP, REST APIs, and Python, including Sasmita Lens, Library Management, Calculator, Bookshelf API, [`Programming-with-Python`](https://github.com/repan334/Programming-with-Python), and [`apk_prompt`](https://github.com/repan334/apk_prompt).
-- **Learning plan 01 - Data and ML foundations:** strengthening data preprocessing, visualization, classical machine learning, model evaluation, and TensorFlow through small end-to-end projects.
-- **Learning plan 02 - Applied AI systems:** gradually exploring PyTorch, deep learning, NLP, transformers, LLM APIs, RAG, agents, and model deployment without skipping the fundamentals behind them.
-
-## Learning Map
-
-| Path | Current direction |
-| --- | --- |
-| **Built and practiced** | Python, Prompt Engineering, Git/GitHub, REST APIs, Dart/Flutter, PHP/Laravel, JavaScript, Node.js, React, Next.js, SQL, MySQL, and PostgreSQL. |
-| **Plan 01 - Data and ML foundations** | Reinforce NumPy, Pandas, Matplotlib, Seaborn, data preprocessing, scikit-learn, regression, classification, model evaluation, and TensorFlow through focused projects. |
-| **Plan 02 - Applied AI systems** | Learn PyTorch, deep learning, NLP, transformers, Hugging Face, LLMs, OpenAI APIs, RAG, LangChain, LangGraph, AI agents, vector databases, MLflow, FastAPI, and deployment step by step. |
+<table>
+  <tr>
+    <td width="33%" align="center"><strong>Based in</strong><br />Yogyakarta, Indonesia</td>
+    <td width="33%" align="center"><strong>I like building</strong><br />Useful, understandable products</td>
+    <td width="33%" align="center"><strong>Growing toward</strong><br />Applied AI/ML engineering</td>
+  </tr>
+</table>
 
 <details>
-  <summary><strong>Learning context</strong></summary>
+  <summary><strong>Open the human story behind the visual</strong></summary>
   <br />
-  I have used NumPy through TensorFlow in one or two simple projects and have tried Streamlit, Gradio, Jupyter Notebook, and Google Colab. The technologies in Plan 02 are part of my current learning direction, not a claim of equal proficiency.
+  I started by turning small ideas into working mobile, web, backend, and API projects at <strong>SMK Negeri 1 Bantul</strong>. That process taught me that good software is not only about code—it should make a task clearer for the person using it. I am now using Python projects and focused experiments to connect that product mindset with data and AI/ML foundations.
 </details>
 
-## Languages and tools
+<br />
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,dart,flutter,php,laravel,js,nodejs,react,nextjs,mysql,postgres,git,github,vscode,figma,postman&amp;theme=dark&amp;perline=8" alt="Languages and development tools I have worked with" />
-</p>
+<a id="selected-work"></a>
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,anaconda&amp;theme=dark" alt="AI and machine learning tools in my learning path" />
-</p>
+## Selected work
 
-<p align="center"><sub>Icons show tools I have used or am actively learning; they do not represent equal proficiency.</sub></p>
+<p>Four projects, four different problems. Tap a title or its visual stack to inspect the repository.</p>
 
-## Selected projects
+<table>
+  <tr>
+    <td width="50%" valign="top" align="center">
+      <a href="https://github.com/repan334/FIKSI-SasmitaLens"><img height="58" src="https://skillicons.dev/icons?i=flutter,dart,figma&amp;theme=dark" alt="Flutter, Dart, and Figma" /></a>
+      <h3><a href="https://github.com/repan334/FIKSI-SasmitaLens">Sasmita Lens ↗</a></h3>
+      <p><strong>Fruit-quality scan experience</strong></p>
+      <p>Turns an AI-oriented idea into an animated mobile flow with reusable UI, Riverpod state, device-sync concepts, and a gamified vendor view.</p>
+      <img src="https://img.shields.io/badge/FOCUS-PRODUCT_UI-22D3EE?style=flat-square" alt="Focus: Product UI" />
+      <img src="https://img.shields.io/badge/ROLE-COLLABORATIVE_BUILD-7C3AED?style=flat-square" alt="Role: Collaborative build" />
+    </td>
+    <td width="50%" valign="top" align="center">
+      <a href="https://github.com/repan334/perpustakaan"><img height="58" src="https://skillicons.dev/icons?i=php,mysql,css&amp;theme=dark" alt="PHP, MySQL, and CSS" /></a>
+      <h3><a href="https://github.com/repan334/perpustakaan">Library Management ↗</a></h3>
+      <p><strong>Role-based library workflow</strong></p>
+      <p>Translates administrator, staff, and borrower needs into a PHP application backed by structured MySQL data.</p>
+      <img src="https://img.shields.io/badge/FOCUS-WEB_WORKFLOW-22D3EE?style=flat-square" alt="Focus: Web workflow" />
+      <img src="https://img.shields.io/badge/DATA-MYSQL-7C3AED?style=flat-square" alt="Data: MySQL" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top" align="center">
+      <a href="https://github.com/repan334/Kalkulator"><img height="58" src="https://skillicons.dev/icons?i=flutter,dart&amp;theme=dark" alt="Flutter and Dart" /></a>
+      <h3><a href="https://github.com/repan334/Kalkulator">Calculator ↗</a></h3>
+      <p><strong>Input-to-result mobile interaction</strong></p>
+      <p>A focused exercise in interface composition, user input handling, and turning calculation logic into a usable app.</p>
+      <img src="https://img.shields.io/badge/FOCUS-MOBILE_LOGIC-22D3EE?style=flat-square" alt="Focus: Mobile logic" />
+      <img src="https://img.shields.io/badge/STAGE-FOUNDATION-7C3AED?style=flat-square" alt="Stage: Foundation" />
+    </td>
+    <td width="50%" valign="top" align="center">
+      <a href="https://github.com/repan334/Bookshelf-API"><img height="58" src="https://skillicons.dev/icons?i=nodejs,postman&amp;theme=dark" alt="Node.js and Postman" /></a>
+      <h3><a href="https://github.com/repan334/Bookshelf-API">Bookshelf API ↗</a></h3>
+      <p><strong>Book data behind a clean API</strong></p>
+      <p>An early backend project for understanding resources, request flows, validation, and the responsibilities of a web service.</p>
+      <img src="https://img.shields.io/badge/FOCUS-REST_API-22D3EE?style=flat-square" alt="Focus: REST API" />
+      <img src="https://img.shields.io/badge/ROLE-BACKEND-7C3AED?style=flat-square" alt="Role: Backend" />
+    </td>
+  </tr>
+</table>
 
-### [Sasmita Lens](https://github.com/repan334/FIKSI-SasmitaLens)
+<details>
+  <summary><strong>More recent experiments</strong></summary>
+  <br />
+  <a href="https://github.com/repan334/Programming-with-Python"><img src="https://img.shields.io/badge/Programming_with_Python-0B1026?style=for-the-badge&amp;logo=python&amp;logoColor=22D3EE" alt="Programming with Python repository" /></a>
+  <a href="https://github.com/repan334/apk_prompt"><img src="https://img.shields.io/badge/apk__prompt-0B1026?style=for-the-badge&amp;logo=openai&amp;logoColor=A78BFA" alt="APK Prompt repository" /></a>
+</details>
 
-A collaborative Flutter concept for a fruit-quality analysis experience. It includes an animated scanning interface, Riverpod state management, device-sync flows, reusable UI components, and a gamified vendor view. The current scan experience is simulated, making this project a useful exploration of how an AI-oriented product interface can be structured before a real model is integrated.
+## Proof of motion
 
-`Flutter` `Dart` `Riverpod` `Material Design 3` `UI Prototyping`
-
-### [Library Management](https://github.com/repan334/perpustakaan)
-
-A role-based library management project for administrators, staff, and borrowers. It helped me practice translating a real operational flow into a PHP application backed by a MySQL database managed through phpMyAdmin.
-
-`PHP` `MySQL` `CSS` `Role-based Workflow`
-
-### [Calculator](https://github.com/repan334/Kalkulator)
-
-A Dart application created to practice interface composition, input handling, and calculation logic. It represents an earlier stage of my mobile-development journey and the habit of turning programming exercises into usable interfaces.
-
-`Dart` `Flutter` `UI Logic`
-
-### [Bookshelf API](https://github.com/repan334/Bookshelf-API)
-
-An early backend learning repository centered on managing book data through an API. It records my first steps in thinking about resources, request flows, and the responsibilities of a simple web service.
-
-`REST API` `Backend Fundamentals` `Data Management`
-
-## GitHub activity
+<p>Projects show what I build; activity shows that the learning loop is still moving.</p>
 
 <div align="center">
-  <img height="175" src="https://github-stats-extended.vercel.app/api?username=repan334&amp;show_icons=true&amp;include_all_commits=true&amp;border_radius=10&amp;bg_color=050816&amp;title_color=22D3EE&amp;text_color=E2E8F0&amp;icon_color=A78BFA&amp;border_color=312E81" alt="Reifan's GitHub statistics" />
-  <img height="175" src="https://github-stats-extended.vercel.app/api/top-langs/?username=repan334&amp;layout=compact&amp;langs_count=8&amp;border_radius=10&amp;bg_color=050816&amp;title_color=22D3EE&amp;text_color=E2E8F0&amp;border_color=312E81" alt="Reifan's most used public repository languages" />
+  <img height="175" src="https://github-stats-extended.vercel.app/api?username=repan334&amp;show_icons=true&amp;include_all_commits=true&amp;border_radius=12&amp;bg_color=050816&amp;title_color=22D3EE&amp;text_color=E2E8F0&amp;icon_color=A78BFA&amp;border_color=312E81" alt="Reifan's GitHub statistics" />
+  <img height="175" src="https://github-stats-extended.vercel.app/api/top-langs/?username=repan334&amp;layout=compact&amp;langs_count=8&amp;border_radius=12&amp;bg_color=050816&amp;title_color=22D3EE&amp;text_color=E2E8F0&amp;border_color=312E81" alt="Languages found across Reifan's public repositories" />
 </div>
+
+<p align="center"><sub>Repository language distribution describes public code composition—not equal proficiency.</sub></p>
+
+<a id="languages--tools-by-purpose"></a>
+
+## Languages & tools, by purpose
+
+<p>Instead of a logo wall, this map explains what each technology helps me make.</p>
+
+### Languages — the instructions behind the product
+
+| Visual | Language | What I use it for |
+| :---: | --- | --- |
+| <img width="42" src="https://skillicons.dev/icons?i=python&amp;theme=dark" alt="Python" /> | **Python** | Backend scripts, data exploration, visualisation, and ML foundation exercises. |
+| <img width="42" src="https://skillicons.dev/icons?i=dart&amp;theme=dark" alt="Dart" /> | **Dart** | Mobile-app logic, state-driven interfaces, and Flutter application structure. |
+| <img width="42" src="https://skillicons.dev/icons?i=php&amp;theme=dark" alt="PHP" /> | **PHP** | Server-side web workflows such as role-based library operations. |
+| <img width="42" src="https://skillicons.dev/icons?i=js&amp;theme=dark" alt="JavaScript" /> | **JavaScript** | Interactive web behavior and backend/API fundamentals with Node.js. |
+| <img width="42" src="https://skillicons.dev/icons?i=mysql,postgres&amp;theme=dark" alt="MySQL and PostgreSQL" /> | **SQL** | Structuring, storing, querying, and connecting application data. |
+
+### Frameworks — how the product takes shape
+
+<table>
+  <tr>
+    <td width="33%" align="center" valign="top">
+      <img height="54" src="https://skillicons.dev/icons?i=flutter,figma&amp;theme=dark" alt="Flutter and Figma" />
+      <h4>Mobile &amp; product UI</h4>
+      <p><strong>Flutter</strong> builds one mobile interface from reusable components.<br /><strong>Figma</strong> helps plan the experience before code.</p>
+    </td>
+    <td width="33%" align="center" valign="top">
+      <img height="54" src="https://skillicons.dev/icons?i=laravel,nodejs,react,nextjs&amp;theme=dark" alt="Laravel, Node.js, React, and Next.js" />
+      <h4>Web &amp; backend</h4>
+      <p><strong>Laravel / Node.js</strong> handle server logic and APIs.<br /><strong>React / Next.js</strong> assemble interactive web interfaces.</p>
+    </td>
+    <td width="33%" align="center" valign="top">
+      <img height="54" src="https://skillicons.dev/icons?i=tensorflow,pytorch,anaconda&amp;theme=dark" alt="TensorFlow, PyTorch, and Anaconda" />
+      <h4>Data &amp; AI learning</h4>
+      <p><strong>TensorFlow / PyTorch</strong> support model experiments.<br /><strong>Anaconda</strong> keeps data environments organised.</p>
+    </td>
+  </tr>
+</table>
+
+### Workflow tools — how the work stays testable and shareable
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=repan334&amp;background=050816&amp;border=312E81&amp;stroke=312E81&amp;ring=7C3AED&amp;fire=22D3EE&amp;currStreakNum=E2E8F0&amp;sideNums=E2E8F0&amp;currStreakLabel=22D3EE&amp;sideLabels=A78BFA&amp;dates=94A3B8&amp;border_radius=10" alt="Reifan's GitHub contribution streak" />
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,postman&amp;theme=dark" alt="Git, GitHub, Visual Studio Code, and Postman" />
+  <br /><br />
+  <code>Git</code> version history &nbsp;•&nbsp; <code>GitHub</code> collaboration &amp; proof &nbsp;•&nbsp; <code>VS Code</code> development &nbsp;•&nbsp; <code>Postman</code> API checks
 </div>
 
-<div align="center">
-  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=repan334&amp;name=Reifan%20Putra%20Pratama&amp;theme=github_dark&amp;bg_color=050816&amp;title_color=22D3EE&amp;text_color=E2E8F0&amp;icon_color=A78BFA&amp;chart_color=7C3AED&amp;border_color=312E81&amp;animation=draw&amp;duration=5" alt="Reifan's GitHub contribution overview" />
-</div>
+<br />
 
-<p align="center"><sub>Language cards describe public repository composition, not overall expertise.</sub></p>
+<details>
+  <summary><strong>Open my learning direction</strong></summary>
+  <br />
+  <table>
+    <tr>
+      <td><strong>Now reinforcing</strong></td>
+      <td>NumPy, Pandas, Matplotlib, Seaborn, preprocessing, scikit-learn, model evaluation, and TensorFlow through small end-to-end projects.</td>
+    </tr>
+    <tr>
+      <td><strong>Next direction</strong></td>
+      <td>PyTorch, deep learning, NLP, transformers, LLM APIs, RAG, agents, vector databases, FastAPI, and deployment—step by step.</td>
+    </tr>
+  </table>
+  <p><em>This is a direction, not a claim of equal proficiency. Technologies move into my primary stack only after a project gives them evidence.</em></p>
+</details>
 
 ## Contribution trail
 
@@ -106,13 +171,19 @@ An early backend learning repository centered on managing book data through an A
   </picture>
 </div>
 
-<p align="center"><sub>The animation is generated daily from my public contribution graph.</sub></p>
+<div align="center">
+  <img src="https://streak-stats.demolab.com?user=repan334&amp;background=050816&amp;border=312E81&amp;stroke=312E81&amp;ring=7C3AED&amp;fire=22D3EE&amp;currStreakNum=E2E8F0&amp;sideNums=E2E8F0&amp;currStreakLabel=22D3EE&amp;sideLabels=A78BFA&amp;dates=94A3B8&amp;border_radius=12" alt="Reifan's GitHub contribution streak" />
+</div>
 
 ---
 
 <div align="center">
-  <p>I am open to junior opportunities, internships, and learning-focused collaborations.</p>
-  <p>If you are building something thoughtful and have room for someone who learns carefully and keeps showing up, I would be glad to connect.</p>
+  <h2>Have an idea worth building?</h2>
+  <p>I am open to junior roles, internships, and learning-focused collaborations.</p>
+  <a href="mailto:repanptr977@gmail.com"><img src="https://img.shields.io/badge/EMAIL_ME-22D3EE?style=for-the-badge&amp;logo=gmail&amp;logoColor=050816" alt="Email Reyy" /></a>
+  <a href="https://www.linkedin.com/in/reifan-putra-a506a0321/"><img src="https://img.shields.io/badge/LINKEDIN-7C3AED?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://www.instagram.com/reift_.ma/"><img src="https://img.shields.io/badge/INSTAGRAM-0B1026?style=for-the-badge&amp;logo=instagram&amp;logoColor=A78BFA" alt="Instagram" /></a>
+  <br /><br />
   <img src="https://komarev.com/ghpvc/?username=repan334&amp;style=flat-square&amp;color=7C3AED&amp;label=PROFILE+VIEWS" alt="Profile views" />
 </div>
 

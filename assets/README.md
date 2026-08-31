@@ -14,6 +14,12 @@ To rebuild it after changing the logo, labels, timing, or layout:
 powershell -ExecutionPolicy Bypass -File scripts/build-system-gif.ps1
 ```
 
+## Interactive journey map
+
+`reyy-journey-map.svg` is the compact visual introduction shown immediately after the hero. It replaces the previous biography-first opening with three scannable stages: building useful software, connecting data with UX, and growing toward applied AI.
+
+The SVG is 1120×340 pixels and contains two lightweight motion cues: a moving dashed route and a travelling signal node. Its meaning is also available through SVG title/description elements and the README image alt text. It requires no JavaScript, keeping it compatible with GitHub's README renderer.
+
 ## Previous hero concept
 
 `neural-midnight-hero.png` was generated with the built-in image generation tool as an original raster base for this GitHub profile. `neural-midnight-hero.svg` embeds that raster and adds the restrained vector motion used by the README.

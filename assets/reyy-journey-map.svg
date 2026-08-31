@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="340" viewBox="0 0 1120 340" role="img" aria-labelledby="title desc">
+  <title id="title">Reyy's path from product building to applied AI</title>
+  <desc id="desc">A three-stage visual map: build useful software, connect data and interfaces, and grow toward applied AI systems.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1026"/>
+      <stop offset="1" stop-color="#11153A"/>
+    </linearGradient>
+    <linearGradient id="route" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1120" height="340" rx="28" fill="#050816"/>
+  <circle cx="1035" cy="44" r="115" fill="#7C3AED" opacity=".07"/>
+  <circle cx="82" cy="310" r="130" fill="#22D3EE" opacity=".05"/>
+
+  <text x="54" y="58" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">FROM IDEAS TO INTELLIGENT PRODUCTS</text>
+  <text x="54" y="87" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="15">The short version of where I have been—and where I am going.</text>
+
+  <path d="M190 197 C275 197 278 197 356 197 S522 197 602 197 S770 197 850 197" fill="none" stroke="#312E81" stroke-width="5" stroke-linecap="round"/>
+  <path d="M190 197 C275 197 278 197 356 197 S522 197 602 197 S770 197 850 197" fill="none" stroke="url(#route)" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 14" opacity=".78">
+    <animate attributeName="stroke-dashoffset" from="44" to="0" dur="2.4s" repeatCount="indefinite"/>
+  </path>
+
+  <g transform="translate(54 121)">
+    <rect width="280" height="164" rx="22" fill="url(#panel)" stroke="#164E63"/>
+    <circle cx="46" cy="45" r="22" fill="#083344" stroke="#22D3EE"/>
+    <path d="M35 38l11 8-11 8M51 55h9" fill="none" stroke="#22D3EE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="82" y="41" fill="#22D3EE" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.6">01 · FOUNDATION</text>
+    <text x="82" y="65" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">Build useful software</text>
+    <text x="25" y="108" fill="#CBD5E1" font-family="Segoe UI, Arial, sans-serif" font-size="14">Mobile · Web · Backend · APIs</text>
+    <text x="25" y="135" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="13">Turn small ideas into working flows.</text>
+  </g>
+
+  <g transform="translate(420 121)">
+    <rect width="280" height="164" rx="22" fill="url(#panel)" stroke="#4338CA"/>
+    <circle cx="46" cy="45" r="22" fill="#1E1B4B" stroke="#A78BFA"/>
+    <circle cx="38" cy="45" r="4" fill="#A78BFA"/>
+    <circle cx="54" cy="36" r="4" fill="#22D3EE"/>
+    <circle cx="55" cy="54" r="4" fill="#7C3AED"/>
+    <path d="M42 43l8-5M42 47l9 5" stroke="#E2E8F0" stroke-width="2"/>
+    <text x="82" y="41" fill="#A78BFA" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.6">02 · BRIDGE</text>
+    <text x="82" y="65" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">Connect data + UX</text>
+    <text x="25" y="108" fill="#CBD5E1" font-family="Segoe UI, Arial, sans-serif" font-size="14">Python · Visualisation · Product UI</text>
+    <text x="25" y="135" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="13">Make technical output understandable.</text>
+  </g>
+
+  <g transform="translate(786 121)">
+    <rect width="280" height="164" rx="22" fill="url(#panel)" stroke="#6D28D9"/>
+    <circle cx="46" cy="45" r="22" fill="#2E1065" stroke="#7C3AED"/>
+    <path d="M34 48c0-10 8-17 17-15 8 2 11 12 6 18-3 5-9 7-15 4M43 35c2 5 1 10-3 14M51 37c-4 4-4 10 0 15" fill="none" stroke="#A78BFA" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="82" y="41" fill="#A78BFA" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.6">03 · DIRECTION</text>
+    <text x="82" y="65" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">Grow into applied AI</text>
+    <text x="25" y="108" fill="#CBD5E1" font-family="Segoe UI, Arial, sans-serif" font-size="14">ML foundations · Models · Delivery</text>
+    <text x="25" y="135" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="13">Learn by shipping focused experiments.</text>
+  </g>
+
+  <circle cx="374" cy="197" r="6" fill="#22D3EE" filter="url(#softGlow)">
+    <animate attributeName="cx" values="374;746;374" dur="4.8s" repeatCount="indefinite"/>
+    <animate attributeName="fill" values="#22D3EE;#A78BFA;#22D3EE" dur="4.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="560" y="320" text-anchor="middle" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="12" letter-spacing="1.2">BUILD → UNDERSTAND → APPLY</text>
+</svg>

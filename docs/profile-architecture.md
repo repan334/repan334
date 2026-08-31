@@ -20,21 +20,19 @@ The copy follows three rules:
 
 ## 2. Information hierarchy
 
-The README is designed as a top-to-bottom story:
+The README uses an evidence-first scroll story with visual interruptions:
 
 | Order | Section | Purpose | Visitor question answered |
 | --- | --- | --- | --- |
-| 1 | Animated hero | Show Reyy's logo branching into a compact AI/ML system map | “Which technical direction is this profile about?” |
-| 2 | Name and position | State public identity, level, passion, and location | “Who is Reyy?” |
-| 3 | Contact links | Provide immediate recruiter and developer paths | “How can I reach him?” |
-| 4 | About | Explain the journey in human language | “Why software and AI/ML?” |
-| 5 | Current work | Separate completed practice from two active learning plans | “What has he built, and what comes next?” |
-| 6 | Learning map | Repeat the same evidence-first structure with concrete technologies | “What has he actually used?” |
-| 7 | Tool icons | Provide a fast visual scan of the technical surface area | “Which ecosystems are familiar?” |
-| 8 | Selected projects | Attach claims to concrete repositories | “What has he built?” |
-| 9 | GitHub activity | Show visible consistency without framing activity as expertise | “Is the account active?” |
-| 10 | Contribution Snake | End with a memorable but relevant animation | “Does the visual system stay coherent?” |
-| 11 | Closing contact | Repeat the intended opportunity clearly | “What should I do next?” |
+| 1 | Animated hero and action navigation | Establish technical direction and offer direct paths to work, stack, or contact | “Who is Reyy, and where should I click?” |
+| 2 | Animated journey map | Compress biography into a three-stage software → data/UX → AI story | “Where has he been, and where is he going?” |
+| 3 | Optional human story | Keep biography available without forcing every visitor through a paragraph | “What motivated this direction?” |
+| 4 | Visual selected work | Show four projects with recognisable stack icons, a problem, and a focus | “What has he actually built?” |
+| 5 | Proof of motion | Interrupt the page with current GitHub evidence after project claims | “Is this work still active?” |
+| 6 | Languages and tools by purpose | Translate each technology into a beginner-friendly outcome | “What does he use Python, Flutter, or Postman for?” |
+| 7 | Optional learning direction | Preserve roadmap context without letting future plans dominate the portfolio | “What is he learning next?” |
+| 8 | Contribution trail | Finish the technical story with motion and consistency | “Does he keep showing up?” |
+| 9 | Closing contact | Give recruiters and collaborators one clear next action | “How do I reach him?” |
 
 ## 3. Visual system
 
@@ -54,7 +52,7 @@ The palette is applied consistently to the hero, contact badges, statistics, act
 
 ### Motion
 
-Motion is limited to the logo reveal, branch drawing, small data packets, card transitions, and the contribution Snake. The hero contains no 3D objects, drop shadows, noisy particles, glow haze, or blurred transitions. Its sequence is intentionally simple: establish identity first, reveal the system relationships second, hold for reading, and fade cleanly into the next loop.
+Motion is limited to the logo reveal, branch drawing, small data packets, the journey-map route, card transitions, and the contribution Snake. The hero contains no 3D objects, drop shadows, noisy particles, glow haze, or blurred transitions. Its sequence is intentionally simple: establish identity first, reveal the system relationships second, hold for reading, and fade cleanly into the next loop.
 
 ### Typography
 
@@ -62,13 +60,13 @@ The identity, biography, skills, and project descriptions remain native HTML or 
 
 ## 4. Skill representation logic
 
-The profile deliberately avoids percentages and progress bars because they have no stable measurement. Skills follow the same three-part structure in both current work and the Learning Map:
+The profile deliberately avoids percentages and progress bars because they have no stable measurement. The primary stack is separated by what a visitor needs to understand:
 
-1. **Built and practiced** — technologies already used in software, API, or learning projects.
-2. **Plan 01 - Data and ML foundations** — NumPy-to-TensorFlow topics being reinforced through focused projects.
-3. **Plan 02 - Applied AI systems** — PyTorch, LLM, retrieval, agent, and deployment topics being learned gradually.
+1. **Languages** explain which kind of instruction or logic each language supplies.
+2. **Frameworks** explain how mobile, web, backend, data, and AI products take shape.
+3. **Workflow tools** explain how work is versioned, developed, shared, and tested.
 
-The collapsible learning context records that NumPy through TensorFlow have been used only in one or two simple projects, while Streamlit, Gradio, Jupyter Notebook, and Google Colab have been tried. Skill Icons remain a visual index only and do not represent equal proficiency.
+Skill icons provide fast recognition, while adjacent plain-language copy explains practical use for non-developers. Future topics live inside a collapsed learning-direction panel so ambition does not visually compete with completed work. Technologies are not presented as equal proficiency.
 
 ## 5. Project selection logic
 
@@ -88,7 +86,6 @@ Recent repositories, `Programming-with-Python` and `apk_prompt`, appear in the c
 | Overall stats | GitHub Stats Extended | Generated when requested | Alt text remains visible |
 | Top languages | GitHub Stats Extended | Generated when requested | Copy does not depend on the card |
 | Streak | GitHub Readme Streak Stats | Generated when requested | Section remains understandable without it |
-| Contribution overview | GitHub Profile Summary Cards | Generated when requested | Recent-work text provides a static fallback |
 | Profile views | Komarev counter | Updated on profile requests | Non-critical decoration only |
 | Contribution Snake | Platane/snk GitHub Action | Daily and manual workflow | Alt text remains; first run creates output branch |
 
@@ -100,6 +97,7 @@ The active hero pipeline uses:
 
 - `assets/reyy-logo-source.png` — the source profile logo preserved without redesigning its geometry.
 - `assets/reyy-ai-system-preview-v1.gif` — the approved, repository-owned animated hero used by the README.
+- `assets/reyy-journey-map.svg` — the repository-owned animated introduction shown below the hero.
 - `scripts/build-system-gif.ps1` — deterministic builder that recreates the GIF from the source logo.
 
 The GIF is 1120×496 pixels with 48 frames, an 80 ms frame delay, and an infinite loop. It starts with the Reyy logo, draws six branches, reveals Source Code, Data Preprocessing, Model Evaluation, Neural Networks, Linear Regression, and Classification + Categorical cards, then holds the complete map before fading. The flat canvas uses the same Neural Midnight palette as the badges and activity cards and does not rely on a third-party image host.
@@ -121,6 +119,7 @@ repan334/
 │   ├── README.md
 │   ├── reyy-logo-source.png
 │   ├── reyy-ai-system-preview-v1.gif
+│   ├── reyy-journey-map.svg
 │   ├── neural-midnight-hero.png
 │   └── neural-midnight-hero.svg
 ├── docs/
@@ -139,8 +138,8 @@ repan334/
 
 When updating the profile:
 
-1. Add a technology to **Built and practiced** only after it has been used in a project or focused exercise.
-2. Move a technology out of either learning plan only when a concrete project can support the change.
+1. Add a technology to the primary stack only after it has been used in a project or focused exercise.
+2. Move a technology out of the collapsed learning direction only when a concrete project can support the change.
 3. Keep no more than four projects in the main selected-project section.
 4. Prefer current, original work over forks when a stronger AI/ML project becomes available.
 5. Rewrite project descriptions around the problem, personal contribution, and evidence—not generic adjectives.

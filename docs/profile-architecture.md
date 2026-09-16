@@ -87,7 +87,7 @@ Recent repositories, `Programming-with-Python` and `apk_prompt`, appear in the c
 | --- | --- | --- | --- |
 | Overall stats | GitHub Stats Extended | Generated when requested | Alt text remains visible |
 | Top languages | GitHub Stats Extended | Generated when requested | Copy does not depend on the card |
-| Streak | GitHub Readme Streak Stats | Generated when requested | Section remains understandable without it |
+| Streak | Self-generated card (`scripts/build-streak.js`) | Daily and manual workflow | Last generated card remains on the `output` branch |
 | Profile views | Komarev counter | Updated on profile requests | Non-critical decoration only |
 | Contribution Snake | Platane/snk GitHub Action | Daily and manual workflow | Alt text remains; first run creates output branch |
 
@@ -128,13 +128,15 @@ repan334/
 │   └── profile-architecture.md
 ├── scripts/
 │   ├── build-hero.ps1
-│   └── build-system-gif.ps1
+│   ├── build-system-gif.ps1
+│   └── build-streak.js
 └── .github/
     └── workflows/
-        └── snake.yml
+        ├── snake.yml
+        └── streak.yml
 ```
 
-`README.md` is the profile itself. `assets/` contains profile-owned visual files; the older Neural Midnight PNG/SVG pair remains as an unused design reference. `docs/` explains future design decisions. `scripts/build-system-gif.ps1` rebuilds the active animated cover. The workflow publishes generated Snake files to an `output` branch so daily automation does not add commits to `main`.
+`README.md` is the profile itself. `assets/` contains profile-owned visual files; the older Neural Midnight PNG/SVG pair remains as an unused design reference. `docs/` explains future design decisions. `scripts/build-system-gif.ps1` rebuilds the active animated cover. `scripts/build-streak.js` regenerates the streak card from the GitHub GraphQL API using the `GH_TOKEN` repository secret (classic PAT with `read:user` scope) and writes `dist/streak-stats.svg`; a failed run exits without overwriting the previous card. The workflows publish generated Snake and streak files to an `output` branch so daily automation does not add commits to `main`.
 
 ## 9. Maintenance rules
 
@@ -148,3 +150,4 @@ When updating the profile:
 6. Keep the Neural Midnight palette unchanged across any new cards or assets.
 7. Run `powershell -ExecutionPolicy Bypass -File scripts/build-system-gif.ps1` after changing the logo, card labels, timing, or hero layout.
 8. Trigger the Snake workflow manually after the first push so the `output` branch and animation URLs exist immediately.
+9. Keep the `GH_TOKEN` secret (classic PAT, `read:user` scope) present so the streak workflow can generate the card; the streak card intentionally has no third-party service dependency.

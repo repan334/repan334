@@ -170,7 +170,7 @@
 </div>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=repan334&amp;background=050816&amp;border=312E81&amp;stroke=312E81&amp;ring=7C3AED&amp;fire=22D3EE&amp;currStreakNum=E2E8F0&amp;sideNums=E2E8F0&amp;currStreakLabel=22D3EE&amp;sideLabels=A78BFA&amp;dates=94A3B8&amp;border_radius=12" alt="Reifan's GitHub contribution streak" />
+  <img src="https://raw.githubusercontent.com/repan334/repan334/output/streak-stats.svg" alt="Reifan's GitHub contribution streak" />
 </div>
 
 ---

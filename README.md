@@ -3,7 +3,7 @@
     <img src="./assets/reyy-ai-system-preview-v1.gif" width="100%" alt="Animated system map linking the Reyy logo to source code, data preparation, model evaluation, neural networks, linear regression, and classification" />
   </a>
 
-  <h1>Hi, I'm Reyy — I turn ideas into useful software.</h1>
+  <h1>Hi, I'm Reyy - I turn ideas into useful software.</h1>
   <p><strong>Junior Engineer building across product interfaces, backend flows, and the foundations of applied AI.</strong></p>
   <p>Software Engineering Student &nbsp;•&nbsp; Yogyakarta, Indonesia &nbsp;•&nbsp; Open to internships and junior opportunities</p>
 

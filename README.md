@@ -5,7 +5,7 @@
 
   <h1>Hi, I'm Reyy - I turn ideas into useful software.</h1>
   <p><strong>Junior Engineer building across product interfaces, backend flows, and the foundations of applied AI.</strong></p>
-  <p>Software Engineering Student &nbsp;•&nbsp; Yogyakarta, Indonesia &nbsp;•&nbsp; Open to internships and junior opportunities</p>
+  <p>Software Engineering Student | Yogyakarta, Indonesia | Open to internships and junior opportunities</p>
 
   <a href="#selected-work"><img src="https://img.shields.io/badge/EXPLORE_PROJECTS-22D3EE?style=for-the-badge&amp;logo=github&amp;logoColor=050816" alt="Explore projects" /></a>
   <a href="#languages--tools-by-purpose"><img src="https://img.shields.io/badge/VIEW_MY_STACK-7C3AED?style=for-the-badge&amp;logo=stackshare&amp;logoColor=white" alt="View my stack" /></a>

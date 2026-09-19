@@ -21,7 +21,7 @@
 <details>
   <summary><strong>Open the human story behind the visual</strong></summary>
   <br />
-  I started by turning small ideas into working mobile, web, backend, and API projects at <strong>SMK Negeri 1 Bantul</strong>. That process taught me that good software is not only about code—it should make a task clearer for the person using it. I am now using Python projects and focused experiments to connect that product mindset with data and AI/ML foundations.
+  I started by turning small ideas into working mobile, web, backend, and API projects at <strong>SMK Negeri 1 Bantul</strong>. That process taught me that good software is not only about code, it should make a task clearer for the person using it. I am now using Python projects and focused experiments to connect that product mindset with data and AI/ML foundations.
 </details>
 
 ---

@@ -99,7 +99,7 @@
 
 <p>Instead of a logo wall, this map explains what each technology helps me make.</p>
 
-### Languages — the instructions behind the product
+### Languages - the instructions behind the product
 
 | Visual | Language | What I use it for |
 | :---: | --- | --- |
@@ -109,7 +109,7 @@
 | <img width="42" src="https://skillicons.dev/icons?i=js&amp;theme=dark" alt="JavaScript" /> | **JavaScript** | Interactive web behavior and backend/API fundamentals with Node.js. |
 | <img width="42" src="https://skillicons.dev/icons?i=mysql,postgres&amp;theme=dark" alt="MySQL and PostgreSQL" /> | **SQL** | Structuring, storing, querying, and connecting application data. |
 
-### Frameworks — how the product takes shape
+### Frameworks - how the product takes shape
 
 <table>
   <tr>
@@ -131,7 +131,7 @@
   </tr>
 </table>
 
-### Workflow tools — how the work stays testable and shareable
+### Workflow tools - how the work stays testable and shareable
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=git,github,vscode,postman&amp;theme=dark" alt="Git, GitHub, Visual Studio Code, and Postman" />

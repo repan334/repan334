@@ -169,10 +169,6 @@
   </picture>
 </div>
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/repan334/repan334/output/streak-stats.svg" alt="Reifan's GitHub contribution streak" />
-</div>
-
 ---
 
 <div align="center">

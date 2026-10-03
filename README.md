@@ -178,7 +178,6 @@
   <a href="https://www.linkedin.com/in/reifan-putra-a506a0321/"><img src="https://img.shields.io/badge/LINKEDIN-7C3AED?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn" /></a>
   <a href="https://www.instagram.com/reift_.ma/"><img src="https://img.shields.io/badge/INSTAGRAM-0B1026?style=for-the-badge&amp;logo=instagram&amp;logoColor=A78BFA" alt="Instagram" /></a>
   <br /><br />
-  <img src="https://komarev.com/ghpvc/?username=repan334&amp;style=flat-square&amp;color=7C3AED&amp;label=PROFILE+VIEWS" alt="Profile views" />
 </div>
 
 <!-- Design and implementation notes: docs/profile-architecture.md -->
